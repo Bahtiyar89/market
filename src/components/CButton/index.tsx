@@ -75,7 +75,7 @@ const CButton: FC<ButtonProps> = ({
         type={type}
         disabled={disabled || loading}
         onClick={onClick}
-        className={className}
+        className={`btn ${className}`}
         {...props}
       >
         {children}
