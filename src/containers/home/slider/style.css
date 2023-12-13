@@ -1,3 +1,53 @@
-.slider__main .slider img{
+.slider__main .slider img {
     border-radius: 20px;
+}
+
+.slider__main .slider-dots {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+
+.slider__main .slider-dots li {
+    display: inline-block;
+    width: calc(4% - 8px);
+    margin: 0 2px;
+}
+
+.slider__main .slider-dots button {
+    position: relative;
+    width: 60%;
+    height: 4px;
+    border: 0;
+    background-color: #D6D9E4;
+    font-size: 0;
+}
+
+.slider__main .slider-dots button:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 0%;
+    height: 100%;
+}
+
+
+.slick-active button:after {
+    background-color: #FA0100;
+    animation: progress 4s linear forwards;
+}
+
+
+@keyframes progress {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
 }

@@ -1,5 +1,4 @@
 import "./style.css";
-import React from "react";
 import { CCard } from "src/components";
 import { SliderMain } from "src/containers";
 import Image1 from "src/assets/images/product.png";
@@ -51,7 +50,7 @@ function Home() {
             <main>
               <div className="row">
                 {data.map((d) => (
-                  <div className="col-6 col-md-4" key={d.id}>
+                  <div className="col-6 col-md-4 col-xl-3" key={d.id}>
                     <CCard
                       id={d.id}
                       image={d.image}

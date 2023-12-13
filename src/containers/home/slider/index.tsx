@@ -1,5 +1,4 @@
 import "./style.css";
-import React from "react";
 import Slider from "react-slick";
 import Image1 from "src/assets/images/main/image1.png";
 
@@ -41,12 +40,16 @@ function SliderMain() {
   ];
 
   let settings = {
+    pauseOnHover: false,
+    pauseOnFocus: false,
     dots: true,
-    infinite: false,
-    speed: 500,
+    infinite: true,
+    speed: 600,
+    autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
+    dotsClass: "slider-dots",
     responsive: [
       {
         breakpoint: 1024,

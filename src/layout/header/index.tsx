@@ -1,5 +1,5 @@
 import "./style.css";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Offcanvas } from "react-bootstrap";
 import Logo from "src/assets/images/logo.svg";
 
